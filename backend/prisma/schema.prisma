@@ -21,6 +21,8 @@ model Student {
   payments  Payment[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+  referralSource String?
+  referredBy     String?
 }
 
 model Course {
